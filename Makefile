@@ -6,6 +6,7 @@ all: ;
 install:
 	install -m 0755 -D bluetooth-serial-console.py $(DESTDIR)$(PREFIX)/bin/bluetooth-serial-console
 	install -m 0755 -D bluetooth-automatic-pairing.py $(DESTDIR)$(PREFIX)/bin/bluetooth-automatic-pairing
+	install -m 0755 -D bluetooth-serial-client.py $(DESTDIR)$(PREFIX)/bin/bluetooth-serial-client
 	install -m 0755 -D -t $(DESTDIR)$(SYSCONFDIR)/systemd/system/ bluetooth-serial-console.service
 	install -m 0755 -D -t $(DESTDIR)$(SYSCONFDIR)/systemd/system/ bluetooth-automatic-pairing.service
 

@@ -6,10 +6,11 @@ Works with BlueZ >= 5.x over DBUS, with BlueZ's default settings. No bluetoothd
 --compat, hciconfig, sdptool or rfcomm needed. Those were needed for earlier
 BlueZ <= 4.x, and most are now deprecated.
 
-Incoming Serial Port connections are connected directly to a login process. When
-the connection is broken from the client, the host-side login process is closed.
-(Use screen or tmux to preserve sessions). Any other program can be used
-instead of a terminal login.
+This runs server side of the Serial Port Profile, and requires a client
+connection from the other end. Incoming Serial Port connections are connected
+directly to a login process. When the connection is broken from the client, the
+host-side login process is closed. (Use screen or tmux to preserve sessions).
+Any other program can be used instead of a terminal login.
 
 This script normally requires root to run to control Bluetooth and create PTYs
 for login. If systemd machinectl is present and the user has permissions to
@@ -17,7 +18,6 @@ control Bluetooth (i.e. during a desktop session), the script can be run as
 non-root.
 '''
 __author__ = 'Joe Mullally'
-__email__ = 'jwmullally@gmail.com'
 __contact__ = 'https://github.com/jwmullally/bluetooth-serial-console'
 __license__ = 'MIT'
 __version__ = '1.0'

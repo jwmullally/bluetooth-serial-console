@@ -19,7 +19,6 @@ it is not possible to have a fixed PIN on the agent side for use as a password.
 The generated pin is logged for validation purposes.
 '''
 __author__ = 'Joe Mullally'
-__email__ = 'jwmullally@gmail.com'
 __contact__ = 'https://github.com/jwmullally/bluetooth-serial-console'
 __license__ = 'MIT'
 __version__ = '1.0'
