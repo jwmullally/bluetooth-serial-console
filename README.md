@@ -78,7 +78,7 @@ The generated pin is logged for validation purposes.
       --version             show program's version number and exit
 
 
-## bluetooth-serial-client
+### bluetooth-serial-client
 
 Simple Bluetooth Serial Port Profile client.
 
