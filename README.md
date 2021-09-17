@@ -11,7 +11,7 @@ System login console for Bluetooth Serial Port Profile connections.
 
 Works with BlueZ >= 5.x over DBUS, with BlueZ's default settings. No bluetoothd
 --compat, hciconfig, sdptool or rfcomm needed. Those were needed for earlier
-BlueZ <= 4.x.
+BlueZ <= 4.x, and most are now deprecated.
 
 Incoming Serial Port connections are connected directly to a login process. When
 the connection is broken from the client, the host-side login process is closed.
