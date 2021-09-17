@@ -3,7 +3,7 @@ Description=Login console over Bluetooth Serial Port Profile
 After=bluetooth.service
 
 [Service]
-ExecStart=/usr/local/bin/bluetooth-serial-console --discoverable
+ExecStart=/usr/local/bin/bluetooth-serial-console
 Restart=always
 
 [Install]

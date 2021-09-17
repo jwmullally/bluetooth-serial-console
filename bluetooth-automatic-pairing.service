@@ -1,0 +1,10 @@
+[Unit]
+Description=Bluetooth Automatic Pairing Agent
+After=bluetooth.service
+
+[Service]
+ExecStart=/usr/local/bin/bluetooth-automatic-pairing
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
